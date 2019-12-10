@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise203</title>
+</head>
+<body><form action="#" th:action="@{/employeeform}" th:object="${employee}" method="post">
+    first_name: <input type="text" th:field="*{firstName}" /><br />
+    last_name: <input type="text" th:field="*{lastName}" /><br />
+    SSN: <input type="text" th:field="*{ssn}" /><br />
+    DOB: <input type="text" th:field="*{dob}" /><br />
+    <input type="Submit" value="Submit" />
+</form>
+</body>
+</html>
